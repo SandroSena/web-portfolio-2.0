@@ -62,6 +62,7 @@ body {
     width: 20rem;
     display: flex; 
     justify-content: space-between;
+    animation: moveInBottom 1s;
 }
 
 .icons li > a:visited {
