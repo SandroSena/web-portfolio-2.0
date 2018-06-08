@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after  {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+}
+
+/********************************* Header *********************************/
+
+.header-container {
+    height: 100vh;
+    background-image: linear-gradient(
+        to left bottom, 
+        hsla(0, 0%, 21%, 0.8), 
+        hsla(0, 0%, 0%, 0.8)),
+        url('../img/background.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /* clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);   */
+}
+
+.header-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;   
+    padding-top: 20rem;
+}
+
+.header-img {
+    height: 20rem;
+    border-radius: 10rem;
+    animation: moveInBottom 1s;
+}
+
+.header-h1 {
+    font-size: 6rem;
+    animation: moveInLeft 1s ease-out; 
+}
+
+.header-span {
+    font-size: 2rem;
+    animation: moveInRight 1s ease-in;
+}
+
+/********************************* About *********************************/
+
+.about-container {
+   background-color: hsl(0, 0%, 4%);
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-h2 {
+    font-size: 6rem;
+    text-align: center;
+    border-bottom: solid .1rem;
+    padding: 1rem;
+}
+
+.about-p1 {
+    font-size: 2.2rem;
+    width: 40%;
+    margin: 4rem;
+    text-align: left;
+}
+
+.about-p2 {
+    font-size: 2rem;
+    width: 60%;
+    margin: 4rem;
+    text-align: left;
+}
+
+/********************************* Animações *********************************/
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
