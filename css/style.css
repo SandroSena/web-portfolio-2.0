@@ -126,13 +126,13 @@ body {
 .skillbar {
       position:relative;
       display:block;
-      margin-bottom:15px;
+      margin-bottom:1.5rem;
       width:100%;
       background:#efefef;
-      height:30px;
-      border-radius:3px;
-      -moz-border-radius:3px;
-      -webkit-border-radius:3px;
+      height:3rem;
+      border-radius:.3rem;
+      -moz-border-radius:.3rem;
+      -webkit-border-radius:.3rem;
       -webkit-transition:0.4s linear;
       -moz-transition:0.4s linear;
       -ms-transition:0.4s linear;
@@ -149,48 +149,48 @@ body {
       position:absolute;
       top:0;
       left:0;
-      width:110px;
+      width:11.0rem;
       font-weight:bold;
-      font-size:13px;
+      font-size:1.3rem;
       color:#fff;
       background:#6adcfa;
-      -webkit-border-top-left-radius:3px;
-      -webkit-border-bottom-left-radius:4px;
-      -moz-border-radius-topleft:3px;
-      -moz-border-radius-bottomleft:3px;
-      border-top-left-radius:3px;
-      border-bottom-left-radius:3px;
+      -webkit-border-top-left-radius:.3rem;
+      -webkit-border-bottom-left-radius:.4rem;
+      -moz-border-radius-topleft:.3rem;
+      -moz-border-radius-bottomleft:.3rem;
+      border-top-left-radius:.3rem;
+      border-bottom-left-radius:.3rem;
 }
 
 .skillbar-title span {
       display:block;
       background:rgba(0, 0, 0, 0.15);
-      padding:0 20px;
-      height:30px;
-      line-height:30px;
-      -webkit-border-top-left-radius:3px;
-      -webkit-border-bottom-left-radius:3px;
-      -moz-border-radius-topleft:3px;
-      -moz-border-radius-bottomleft:3px;
-      border-top-left-radius:3px;
-      border-bottom-left-radius:3px;
+      padding:0 2rem;
+      height:3rem;
+      line-height:3rem;
+      -webkit-border-top-left-radius:.3rem;
+      -webkit-border-bottom-left-radius:.3rem;
+      -moz-border-radius-topleft:.3rem;
+      -moz-border-radius-bottomleft:.3rem;
+      border-top-left-radius:.3rem;
+      border-bottom-left-radius:.3rem;
   }
 
 .skillbar-bar {
-      height:30px;
-      width:0px;
-      border-radius:3px;
-      -moz-border-radius:3px;
-      -webkit-border-radius:3px;
+      height:3rem;
+      width:0;
+      border-radius:.3rem;
+      -moz-border-radius:.3rem;
+      -webkit-border-radius:.3rem;
 }
 
 .skill-bar-percent {
       position:absolute;
-      right:10px;
+      right:1rem;
       top:0;
-      font-size:11px;
-      height:30px;
-      line-height:30px;
+      font-size:1.1rem;
+      height:3rem;
+      line-height:3rem;
       color:#ffffff;
       color:rgba(0, 0, 0, 0.5);
 }
@@ -212,6 +212,10 @@ body {
 
 .footer-p {
     font-size: 2rem;
+}
+
+.footer-icons {
+    padding-top: 2rem;
 }
 
 /********************************* Animações *********************************/
