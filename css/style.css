@@ -80,6 +80,7 @@ body {
 
 .about-content {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .about-h2 {
