@@ -80,7 +80,6 @@ body {
 
 .about-content {
     display: flex;
-    flex-flow: row wrap;
 }
 
 .about-h2 {
@@ -262,5 +261,13 @@ body {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+/********************************* MediaQuery *********************************/
+
+@media only screen and (max-width: 720px) {
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
