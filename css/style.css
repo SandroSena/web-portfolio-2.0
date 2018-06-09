@@ -204,7 +204,7 @@ body {
 
 /********************************* Footer *********************************/
 
-.container-footer {
+.footer-container {
     background-color: hsl(0, 0%, 4%);
     display: flex;
     flex-flow: column wrap;
