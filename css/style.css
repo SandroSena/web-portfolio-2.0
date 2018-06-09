@@ -65,11 +65,13 @@ body {
     animation: moveInBottom 1s;
 }
 
-.icons li > a:visited {
+.icons li > a:visited,
+.icons li > a:link {
     color: #fff;
 }
 
-.icons li > a:hover{
+.icons li > a:hover,
+.icons li > a:active{
     color: #003b25;
 }
 
