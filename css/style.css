@@ -208,7 +208,6 @@ body {
     background-color: hsl(0, 0%, 4%);
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
     align-items: center;
     padding-top: 3rem;
 }
