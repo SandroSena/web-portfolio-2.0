@@ -75,6 +75,37 @@ body {
     color: #003b25;
 }
 
+/********************************* About *********************************/
+
+.about-container {
+    background-color: hsl(0, 0%, 4%);
+ }
+ 
+ .about-content {
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+ }
+ 
+ .about-img {
+     margin-top: 2rem;
+     height: 35rem;
+     width: 60rem;
+     align-content: center;      
+ }
+ 
+ .about-h2 {
+     font-size: 6rem;
+     text-align: center;
+     border-bottom: solid .1rem;
+     padding: 1rem;
+ }
+ 
+ .about-p {
+     font-size: 2rem;
+     margin: 2rem;
+     text-align: center;
+ } 
 
 /********************************* Skills *********************************/
 
@@ -173,38 +204,6 @@ body {
     margin: 0;
 }
 
-/********************************* About *********************************/
-
-.about-container {
-   background-color: hsl(0, 0%, 4%);
-}
-
-.about-content {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.about-img {
-    margin-top: 2rem;
-    height: 35rem;
-    width: 60rem;
-    align-content: center;      
-}
-
-.about-h2 {
-    font-size: 6rem;
-    text-align: center;
-    border-bottom: solid .1rem;
-    padding: 1rem;
-}
-
-.about-p {
-    font-size: 2rem;
-    margin: 2rem;
-    text-align: center;
-}
-
 /********************************* Footer *********************************/
 
 .footer-container {
@@ -238,7 +237,6 @@ body {
     width: 50rem;
     font-size: 10rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
 }
 
 /********************************* Animações *********************************/
@@ -289,23 +287,25 @@ body {
 /********************************* MediaQuery *********************************/
 
 @media only screen and (max-width: 720px) {
-    .about-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .footer-icons {
-        width: 25rem;
-        font-size: 5rem;
-    }
-    
-    .footer-p {
-        font-size: 1.8rem;
-    }
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .about-img {
-        height: 35rem;
-        width: 35rem;
-        margin-top: 2rem;
-    }
+.footer-icons {
+    width: 25rem;
+    font-size: 5rem;
+}
+
+.footer-p {
+    font-size: 1.6rem;
+}
+
+.about-img {
+    height: 35rem;
+    width: 32rem;
+    margin-top: 2rem;
+}
+
 }
