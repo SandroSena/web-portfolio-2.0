@@ -1,7 +1,7 @@
-jQuery(document).ready(function(){
-    jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar-bar').animate({
-            width:jQuery(this).attr('data-percent')
+$(document).ready(function(){
+    $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({
+            width:$(this).attr('data-percent')
         },3000);
     });
 });
