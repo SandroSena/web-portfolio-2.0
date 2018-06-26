@@ -42,7 +42,7 @@ body {
 .header-img {
     height: 20rem;
     border-radius: 10rem;
-    animation: moveInBottom 1s;
+    animation: zoomIn 1s;
 }
 
 .header-h1 {
@@ -239,6 +239,20 @@ body {
 }
 
 /********************************* Animações *********************************/
+
+
+  
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
 
 @keyframes moveInLeft {
     0% {
