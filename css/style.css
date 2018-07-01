@@ -42,17 +42,17 @@ body {
 .header-img {
     height: 20rem;
     border-radius: 10rem;
-    animation: zoomIn 1s;
+    animation: zoomIn 2s;
 }
 
 .header-h1 {
     font-size: 6rem;
-    animation: moveInLeft 1s ease-out; 
+    animation: flipInX 3s ease-out; 
 }
 
 .header-span {
     font-size: 2rem;
-    animation: moveInRight 1s ease-in;
+    animation: flipInX 3s ease-in;
 }
 
 .icons {
@@ -297,6 +297,39 @@ body {
         transform: translate(0);
     }
 }
+
+@keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
 /********************************* MediaQuery *********************************/
 
 @media only screen and (max-width: 720px) {
