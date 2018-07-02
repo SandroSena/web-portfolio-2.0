@@ -254,7 +254,7 @@ body {
     }
   }
 
-@keyframes moveInLeft {
+/* @keyframes moveInLeft {
     0% {
         opacity: 0;
         transform: translateX(-10rem);
@@ -268,9 +268,9 @@ body {
         opacity: 1;
         transform: translate(0);
     }
-}
+} */
 
-@keyframes moveInRight {
+/* @keyframes moveInRight {
     0% {
         opacity: 0;
         transform: translateX(10rem);
@@ -296,7 +296,7 @@ body {
         opacity: 1;
         transform: translate(0);
     }
-}
+} */
 
 @keyframes flipInX {
     from {
