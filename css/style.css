@@ -254,50 +254,6 @@ body {
     }
   }
 
-/* @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(2rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-} */
-
-/* @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        transform: translateX(-2rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-} */
-
 @keyframes flipInX {
     from {
       -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
