@@ -238,14 +238,14 @@ body {
 }
 
 /********************************* Formulario *********************************/
-.form-container{
+.form-container {
   display: flex;
   flex-flow: column wrap;
 }
 
 .form-php {
   width: 30rem;
-} 
+}
 
 .form-label {
   font-size: 2rem;
@@ -254,46 +254,48 @@ body {
 .form-input {
   width: 40rem;
   height: 4rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   text-align: center;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 .form-msg {
   width: 40rem;
   height: 10rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   text-align: center;
   font-size: 2rem;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 .form-btn {
   width: 12rem;
   height: 4rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   margin-left: 18rem;
   margin-top: 1rem;
   cursor: pointer;
 }
 
-.form-php label.nao-aparece, .form-php input.nao-aparece {
-	display: none !important;
+.form-php label.nao-aparece,
+.form-php input.nao-aparece {
+  display: none !important;
 }
 
-#form-erro span, #form-send span  {
-	font-size: 18px;
-	line-height: 25px;
-	margin-bottom: 10px;
-	display: block;
+#form-erro span,
+#form-send span {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 #form-send {
-	color: #31aa39;
+  color: #31aa39;
 }
 
 #form-erro {
-	color: #f64540;
+  color: #f64540;
 }
 
 /********************************* Animações *********************************/
@@ -403,6 +405,56 @@ body {
   animation-name: shake;
 }
 
+/********************************* CSS Spinner Preloader *********************************/
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111010;
+  z-index: 999999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #f8f6f6;
+
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 /********************************* MediaQuery *********************************/
 
 @media only screen and (max-width: 720px) {
