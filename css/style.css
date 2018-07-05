@@ -405,7 +405,7 @@ body {
   animation-name: shake;
 }
 
-/********************************* CSS Spinner Preloader *********************************/
+/* ******************************** CSS Spinner Preloader ********************************
 
 .spinner-wrapper {
   position: fixed;
@@ -454,7 +454,7 @@ body {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
-}
+} */
 /********************************* MediaQuery *********************************/
 
 @media only screen and (max-width: 720px) {
