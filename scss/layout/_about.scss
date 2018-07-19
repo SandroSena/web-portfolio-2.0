@@ -1,0 +1,44 @@
+.about {
+  background-color: $black;
+
+  &-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &-img {
+    margin-top: 2rem;
+    height: 35rem;
+    width: 60rem;
+    align-content: center;
+  }
+
+  &-h2 {
+    font-size: 6rem;
+    text-align: center;
+    border-bottom: solid 0.1rem;
+    padding: 1rem;
+  }
+
+  &-p {
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about-img {
+    height: 35rem;
+    width: 32rem;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,94 @@
+.skills {
+    background-color: $black;
+  
+    &-h2 {
+      font-size: 6rem;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: solid 0.1rem;
+    }
+  }
+  
+  .container-skillbar {
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    height: auto;
+  }
+  
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background: $white;
+    height: 3rem;
+    border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+  
+    &-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 11rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: $white;
+      background: $blue-light;
+      -webkit-border-top-left-radius: 0.3rem;
+      -webkit-border-bottom-left-radius: 0.4rem;
+      -moz-border-radius-topleft: 0.3rem;
+      -moz-border-radius-bottomleft: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+    }
+  
+    &-title span {
+      display: block;
+      background: rgba($black, 0.15);
+      padding: 0 2rem;
+      height: 3rem;
+      line-height: 3rem;
+      -webkit-border-top-left-radius: 0.3rem;
+      -webkit-border-bottom-left-radius: 0.3rem;
+      -moz-border-radius-topleft: 0.3rem;
+      -moz-border-radius-bottomleft: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+    }
+  
+    &-bar {
+      height: 3rem;
+      width: 0;
+      border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+    }
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    font-size: 1.4rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: $white-light;
+    color: rgba($black, 0.5);
+  }
+  
+  #skillbar-last {
+    margin: 0;
+  }

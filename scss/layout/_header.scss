@@ -1,0 +1,28 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, $black-light, $black-dark),
+      url("../img/background.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  
+    &-content {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding-top: 15rem;
+    }
+  
+    &-img {
+      height: 20rem;
+      border-radius: 10rem;
+    }
+  
+    &-h1 {
+      font-size: 6rem;
+    }
+  
+    &-span {
+      font-size: 2rem;
+    }
+  }
