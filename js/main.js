@@ -30,16 +30,9 @@ Visibility.onVisible(function() {
   }, 10000);
 });
 
-//~ Spinner (Preloader)
+//~ Waypoint
 
-// $(document).ready(function() {
-//   //Preloader
-//   $(window).on("load", function() {
-//     preloaderFadeOutTime = 500;
-//     function hidePreloader() {
-//       var preloader = $(".spinner-wrapper");
-//       preloader.fadeOut(preloaderFadeOutTime);
-//     }
-//     hidePreloader();
-//   });
-// });
+$(".about-p").waypoint(() => {
+  $(".about-p").addClass("animated zoomIn");
+}, { offset: '95%' });
+
