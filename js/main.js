@@ -32,7 +32,7 @@ Visibility.onVisible(function() {
 
 //~ Waypoint
 
-$(".about-p").waypoint(() => {
-  $(".about-p").addClass("animated zoomIn");
-}, { offset: '95%' });
+// $(".about-p").waypoint(() => {
+//   $(".about-p").addClass("animated zoomIn");
+// }, { offset: '95%' });
 
